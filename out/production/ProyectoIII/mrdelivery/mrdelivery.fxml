@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="BASELINE_CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mrdelivery.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="889.0" prefWidth="1265.0" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER" layoutX="532.0" layoutY="14.0" prefHeight="33.0" prefWidth="152.0" text="Mr Delivery">
+               <font>
+                  <Font size="27.0" />
+               </font></Label>
+            <Pane prefHeight="842.0" prefWidth="289.0">
+               <children>
+                  <TextArea fx:id="colaDeGrafos" layoutX="1.0" layoutY="57.0" prefHeight="782.0" prefWidth="289.0" />
+                  <Label layoutX="111.0" layoutY="20.0" text="Grafos">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="verGrafo" layoutX="315.0" layoutY="89.0" mnemonicParsing="false" onAction="#verGrafo" prefHeight="27.0" prefWidth="145.0" text="Ver grafo" />
+            <Button fx:id="dijkstraBTN" layoutX="319.0" layoutY="253.0" mnemonicParsing="false" onAction="#dijkstraBTN" prefHeight="27.0" prefWidth="145.0" text="Costo desde" />
+            <Button fx:id="allPaths" layoutX="321.0" layoutY="325.0" mnemonicParsing="false" onAction="#getAllPaths" prefHeight="27.0" prefWidth="145.0" text="Todos los caminos" />
+            <Button layoutX="319.0" layoutY="371.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="¿Hay camino?" />
+            <TextArea fx:id="verGrafoText" layoutX="489.0" layoutY="65.0" prefHeight="278.0" prefWidth="437.0" />
+            <Separator layoutX="933.0" layoutY="55.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="9.0" />
+            <Button fx:id="avanzar" layoutX="323.0" layoutY="714.0" mnemonicParsing="false" onAction="#avanzarBTN" prefHeight="33.0" prefWidth="132.0" text="Avanzar" />
+            <TextArea layoutX="951.0" layoutY="65.0" prefHeight="377.0" prefWidth="300.0" />
+            <TextArea fx:id="caminoTxtArea" layoutX="489.0" layoutY="604.0" prefHeight="198.0" prefWidth="437.0" />
+            <Button layoutX="980.0" layoutY="513.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Activar / desactivar arista" />
+            <Button layoutX="980.0" layoutY="638.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Activar / desacticar vértice" />
+            <Label layoutX="500.0" layoutY="574.0" text="Camino:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="514.0" layoutY="831.0" text="APP REPARTIDORR">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1041.0" layoutY="820.0" text="GRAPH MANAGER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="427.0" layoutY="815.0" prefHeight="9.0" prefWidth="300.0" />
+            <Separator layoutX="940.0" layoutY="811.0" prefHeight="9.0" prefWidth="300.0" />
+            <Button fx:id="caminoOptimoBTN" layoutX="318.0" layoutY="455.0" mnemonicParsing="false" onAction="#caminoOptimoBTN" prefHeight="27.0" prefWidth="145.0" text="Camino óptimo" />
+            <Button fx:id="recorridoProfundidadBtn" layoutX="316.0" layoutY="530.0" mnemonicParsing="false" onAction="#recorridoProfundidadBtn" prefHeight="27.0" prefWidth="145.0" text="Recorrido profundidad" />
+            <Button fx:id="recorridoAnchuraBtn" layoutX="316.0" layoutY="561.0" mnemonicParsing="false" onAction="#recorridoAnchuraBtn" prefHeight="27.0" prefWidth="145.0" text="Recorrido anchura" />
+            <Button fx:id="ArbolDeExpansionBtn" layoutX="315.0" layoutY="676.0" mnemonicParsing="false" onAction="#ArbolDeExpansionBtn" prefHeight="27.0" prefWidth="152.0" text="Árbol expansión mínima" />
+            <TextField layoutX="980.0" layoutY="480.0" />
+            <TextField layoutX="980.0" layoutY="605.0" />
+            <TextArea fx:id="algoritmos" layoutX="489.0" layoutY="379.0" prefHeight="179.0" prefWidth="437.0" />
+            <Label layoutX="496.0" layoutY="352.0" text="Algoritmos:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="leerGrafoBTN" layoutX="69.0" layoutY="843.0" mnemonicParsing="false" onAction="#setLeerGrafoBTN" prefHeight="33.0" prefWidth="132.0" text="Leer grafo JSON" />
+            <TextField fx:id="allPathsTxt" layoutX="322.0" layoutY="289.0" prefHeight="27.0" prefWidth="145.0" promptText="Ej. A-B" />
+            <RadioButton fx:id="costA" layoutX="316.0" layoutY="595.0" mnemonicParsing="false" selected="true" text="Costo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="kmA" layoutX="316.0" layoutY="622.0" mnemonicParsing="false" text="Km" toggleGroup="$group" />
+            <RadioButton fx:id="minutosA" layoutX="316.0" layoutY="649.0" mnemonicParsing="false" text="Minutos" toggleGroup="$group" />
+            <CheckBox fx:id="scroll" layoutX="871.0" layoutY="355.0" mnemonicParsing="false" text="Scroll" />
+            <TextField fx:id="caminoOptimoTxt" layoutX="319.0" layoutY="421.0" prefHeight="27.0" prefWidth="145.0" promptText="Ej. A-B" />
+            <TextField fx:id="camino" layoutX="577.0" layoutY="572.0" prefHeight="27.0" prefWidth="145.0" promptText="Ej. 0, 1 o n" />
+            <TextField fx:id="RecorridoTxt1" layoutX="316.0" layoutY="492.0" prefHeight="27.0" prefWidth="145.0" promptText="Ej. A" />
+            <RadioButton fx:id="cost" layoutX="322.0" layoutY="126.0" mnemonicParsing="false" selected="true" text="Costo">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="km" layoutX="322.0" layoutY="153.0" mnemonicParsing="false" text="Km">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="minuts" layoutX="322.0" layoutY="180.0" mnemonicParsing="false" text="Minutos">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+            </RadioButton>
+            <TextField fx:id="getVertice" layoutX="321.0" layoutY="214.0" prefHeight="27.0" prefWidth="145.0" promptText="Ej. Vertice de Partida" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

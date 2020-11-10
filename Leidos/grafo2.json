@@ -1,0 +1,58 @@
+{
+  "vertices": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "aristas": [
+    {
+      "origen": "A",
+      "destino": "B",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "A",
+      "destino": "C",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "A",
+      "destino": "D",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "B",
+      "destino": "D",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "C",
+      "destino": "B",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "C",
+      "destino": "A",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    }
+  ]
+}

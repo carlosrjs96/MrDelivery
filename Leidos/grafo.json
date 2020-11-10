@@ -1,0 +1,100 @@
+{
+  "vertices": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "aristas": [
+    {
+      "origen": "A",
+      "destino": "B",
+      "activo": true,
+      "costo": 20,
+      "km": 2.7,
+      "minutos": 5
+    },
+    {
+      "origen": "A",
+      "destino": "D",
+      "activo": false,
+      "costo": 40,
+      "km": 0.7,
+      "minutos": 2
+    },
+    {
+      "origen": "B",
+      "destino": "C",
+      "activo": true,
+      "costo": 3,
+      "km": 4.7,
+      "minutos": 20.2
+    },
+    {
+      "origen": "B",
+      "destino": "F",
+      "activo": true,
+      "costo": 118,
+      "km":5.7,
+      "minutos": 15.2
+    },
+    {
+      "origen": "C",
+      "destino": "D",
+      "activo": true,
+      "costo": 0,
+      "km": 3.7,
+      "minutos": 11.2
+    },
+    {
+      "origen": "C",
+      "destino": "E",
+      "activo": true,
+      "costo": 20,
+      "km": 1.7,
+      "minutos": 10.2
+    },
+    {
+      "origen": "C",
+      "destino": "A",
+      "activo": true,
+      "costo": 15,
+      "km": 6.7,
+      "minutos": 5.2
+    },
+    {
+      "origen": "D",
+      "destino": "C",
+      "activo": true,
+      "costo": 10,
+      "km": 8,
+      "minutos": 10.2
+    },
+    {
+      "origen": "E",
+      "destino": "F",
+      "activo": true,
+      "costo": 0,
+      "km": 5,
+      "minutos": 1.2
+    },
+    {
+      "origen": "E",
+      "destino": "B",
+      "activo": true,
+      "costo": 20,
+      "km": 5.7,
+      "minutos": 0.4
+    },
+    {
+      "origen": "F",
+      "destino": "D",
+      "activo": true,
+      "costo": 11,
+      "km": 7.7,
+      "minutos": 0.2
+    }
+  ]
+}
